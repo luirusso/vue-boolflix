@@ -1,9 +1,7 @@
 <template>
-    <div id="app">
-        <Header @search="performSearch" />
-
-        <Main />
-    </div>
+  <div id="app">
+    <Header />
+  </div>
 </template>
 
 <script>
@@ -43,6 +41,16 @@ export default {
     },
   },
 };
+import Header from './components/Header.vue'
+
+export default {
+  name: 'App',
+  components: {
+    Header
+  }
+}
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+
+</style>
