@@ -2,11 +2,14 @@
     <div class="container">
         <div class="search-container">
             <input
+                @keyup.enter="$emit('search', inputSearch), $emit('trigger')"
                 v-model="inputSearch"
                 type="text"
                 placeholder="Cerca film e serie TV"
             />
-            <button @click="$emit('search', inputSearch), $emit('trigger')">CERCA</button>
+            <button @click="$emit('search', inputSearch), $emit('trigger')">
+                CERCA
+            </button>
         </div>
     </div>
 </template>
