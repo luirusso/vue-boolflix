@@ -1,19 +1,12 @@
 <template>
     <div class="container">
         <div class="search-container">
-            <form>
-                <input
-                    v-model="inputSearch"
-                    type="text"
-                    placeholder="Cerca film e serie TV"
-                />
-                <button
-                    type="submit"
-                    @click.prevent="$emit('search', inputSearch)"
-                >
-                    CERCA
-                </button>
-            </form>
+            <input
+                v-model="inputSearch"
+                type="text"
+                placeholder="Cerca film e serie TV"
+            />
+            <button @click="$emit('search', inputSearch), $emit('trigger')">CERCA</button>
         </div>
     </div>
 </template>

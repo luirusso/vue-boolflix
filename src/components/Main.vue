@@ -1,20 +1,20 @@
 <template>
-  <div class="container">
-      <ul>
-          <li>
-              
-          </li>
-      </ul>
-  </div>
+    <div class="container">
+        <ul>
+            <li v-for="(movie, index) in moviesArray" :key="`movie-${index}`">
+                {{ movie.title }}
+            </li>
+        </ul>
+    </div>
 </template>
 
 <script>
 export default {
-    name: 'Main',
-
+    name: "Main",
+    props: {
+        moviesArray: Array,
+    },
 };
 </script>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
