@@ -6,7 +6,13 @@
                 <div>Titolo originale: {{ movie.original_title }}</div>
                 <div>Voto: {{ movie.vote_average }}</div>
                 <div>
-                    <img v-if="movieImageSelector(movie.original_language)" :src="require(`../assets/${movie.original_language}.png`)" alt="">
+                    <img
+                        v-if="movieImageSelector(movie.original_language)"
+                        :src="
+                            require(`../assets/${movie.original_language}.png`)
+                        "
+                        alt=""
+                    />
                 </div>
                 <div>Lingua originale: {{ movie.original_language }}</div>
             </li>
@@ -22,15 +28,12 @@ export default {
     },
     methods: {
         movieImageSelector(apiLanguage) {
-            const languages = ['it', 'en'];
+            const languages = ["it", "en"];
 
-            if(languages.includes(apiLanguage)) {
-                return true;
-            } else {
-                return false;
-            }
+            //operatore ternario
+            return languages.includes(apiLanguage) ? true : false;
         },
-    }
+    },
 };
 </script>
 
