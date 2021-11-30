@@ -25,7 +25,8 @@
 
             <li v-for="(series, index) in tvSeriesArray" :key="`series-${index}`">
                 <div>
-                    <img :src="`https://image.tmdb.org/t/p/w342${series.poster_path}`" alt="">
+                    <img v-if="series.poster_path !== null" :src="`https://image.tmdb.org/t/p/w342${series.poster_path}`" alt="">
+                    <img v-else src="../assets/imageError.png" alt="">
                 </div>
                 <div>Titolo: {{ series.name }}</div>
                 <div>Titolo originale: {{ series.original_name }}</div>
