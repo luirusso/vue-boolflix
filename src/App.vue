@@ -2,7 +2,7 @@
     <div id="app">
         <Header @search="performSearch" @triggerOne="getMovies" @triggerTwo="getTvSeries" />
 
-        <Main :moviesArray="moviesList" :seriesArray="tvSeriesList" />
+        <Main :moviesArray="moviesList" :tvSeriesArray="tvSeriesList" />
     </div>
 </template>
 
