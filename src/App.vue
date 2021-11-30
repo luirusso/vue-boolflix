@@ -1,6 +1,10 @@
 <template>
     <div id="app">
-        <Header @search="performSearch" @triggerOne="getMovies" @triggerTwo="getTvSeries" />
+        <Header
+            @search="performSearch"
+            @triggerOne="getMovies"
+            @triggerTwo="getTvSeries"
+        />
 
         <Main :moviesArray="moviesList" :tvSeriesArray="tvSeriesList" />
     </div>
@@ -43,7 +47,7 @@ export default {
                 })
                 .catch((error) => console.log(error));
         },
-        
+
         getTvSeries() {
             /**
              * Get tv series list from api

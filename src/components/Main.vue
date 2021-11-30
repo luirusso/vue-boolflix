@@ -3,15 +3,19 @@
         <ul>
             <li v-for="(movie, index) in moviesArray" :key="`movie-${index}`">
                 <div>
-                    <img v-if="movie.poster_path !== null" :src="`https://image.tmdb.org/t/p/w342${movie.poster_path}`" alt="">
-                    <img v-else src="../assets/imageError.png" alt="">
+                    <img
+                        v-if="movie.poster_path !== null"
+                        :src="`https://image.tmdb.org/t/p/w342${movie.poster_path}`"
+                        alt=""
+                    />
+                    <img v-else src="../assets/imageError.png" alt="" />
                 </div>
-                
+
                 <div>Titolo: {{ movie.title }}</div>
                 <div>Titolo originale: {{ movie.original_title }}</div>
                 <div>Voto: {{ movie.vote_average }}</div>
                 <div>
-                    <img 
+                    <img
                         class="flag"
                         v-if="movieImageSelector(movie.original_language)"
                         :src="
@@ -23,16 +27,23 @@
                 <div>Lingua originale: {{ movie.original_language }}</div>
             </li>
 
-            <li v-for="(series, index) in tvSeriesArray" :key="`series-${index}`">
+            <li
+                v-for="(series, index) in tvSeriesArray"
+                :key="`series-${index}`"
+            >
                 <div>
-                    <img v-if="series.poster_path !== null" :src="`https://image.tmdb.org/t/p/w342${series.poster_path}`" alt="">
-                    <img v-else src="../assets/imageError.png" alt="">
+                    <img
+                        v-if="series.poster_path !== null"
+                        :src="`https://image.tmdb.org/t/p/w342${series.poster_path}`"
+                        alt=""
+                    />
+                    <img v-else src="../assets/imageError.png" alt="" />
                 </div>
                 <div>Titolo: {{ series.name }}</div>
                 <div>Titolo originale: {{ series.original_name }}</div>
                 <div>Voto: {{ series.vote_average }}</div>
                 <div>
-                    <img 
+                    <img
                         class="flag"
                         v-if="movieImageSelector(series.original_language)"
                         :src="
