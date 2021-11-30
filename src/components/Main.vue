@@ -16,6 +16,22 @@
                 </div>
                 <div>Lingua originale: {{ movie.original_language }}</div>
             </li>
+
+            <li v-for="(series, index) in tvSeriesArray" :key="`series-${index}`">
+                <div>Titolo: {{ series.name }}</div>
+                <div>Titolo originale: {{ series.original_title }}</div>
+                <div>Voto: {{ series.vote_average }}</div>
+                <div>
+                    <img
+                        v-if="movieImageSelector(series.original_language)"
+                        :src="
+                            require(`../assets/${series.original_language}.png`)
+                        "
+                        alt=""
+                    />
+                </div>
+                <div>Lingua originale: {{ series.original_language }}</div>
+            </li>
         </ul>
     </div>
 </template>
@@ -25,6 +41,7 @@ export default {
     name: "Main",
     props: {
         moviesArray: Array,
+        tvSeriesArray: Array,
     },
     methods: {
         movieImageSelector(apiLanguage) {
@@ -37,4 +54,8 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+img {
+    max-width: 30px;
+}
+</style>
