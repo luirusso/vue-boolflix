@@ -251,6 +251,26 @@
                                 </li>
                             </ul>
                         </li>
+                    </ul>
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                role="button"
+                                aria-expanded="false"
+                            >
+                                Il mio Netflix
+                            </a>
+                        </li>
+                        <li class="nav-item px-4">
+                            <button
+                                type="button"
+                                class="btn btn-secondary round_site_btn grey_btn"
+                            >
+                                Accedi
+                            </button>
+                        </li>
                         <div class="container-fluid">
                             <form class="d-flex">
                                 <input
@@ -274,36 +294,6 @@
                                 </button>
                             </form>
                         </div>
-                    </ul>
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="#"
-                                role="button"
-                                aria-expanded="false"
-                            >
-                                Il mio Netflix
-                            </a>
-                        </li>
-                        <li class="nav-item px-4">
-                            <button
-                                type="button"
-                                class="btn btn-secondary round_site_btn grey_btn"
-                            >
-                                Accedi
-                            </button>
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="#"
-                                role="button"
-                                aria-expanded="false"
-                            >
-                                <i class="fs-4 fas fa-search"></i>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
