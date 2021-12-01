@@ -253,6 +253,42 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav align-items-center">
+                        <li class="nav-item px-2">
+                            <button
+                                type="button"
+                                class="btn btn-secondary round_site_btn grey_btn"
+                            >
+                                Accedi
+                            </button>
+                        </li>
+                        <li class="nav-item px-2">
+                            <div class="container-fluid">
+                                <form class="d-flex">
+                                    <input
+                                        class="form-control me-2"
+                                        type="search"
+                                        placeholder="Cerca film e serie"
+                                        aria-label="Search"
+                                        @keyup.enter="
+                                            $emit('search', inputSearch)
+                                        "
+                                        v-model="inputSearch"
+                                    />
+                                    <button
+                                        class="btn btn-outline-success"
+                                        type="submit"
+                                        @click="
+                                            $emit('search', inputSearch),
+                                                $emit('triggerOne'),
+                                                $emit('triggerTwo')
+                                        "
+                                    >
+                                        CERCA
+                                    </button>
+                                </form>
+                            </div>
+                        </li>
+
                         <li class="nav-item">
                             <a
                                 class="nav-link"
@@ -263,37 +299,6 @@
                                 Il mio Netflix
                             </a>
                         </li>
-                        <li class="nav-item px-4">
-                            <button
-                                type="button"
-                                class="btn btn-secondary round_site_btn grey_btn"
-                            >
-                                Accedi
-                            </button>
-                        </li>
-                        <div class="container-fluid">
-                            <form class="d-flex">
-                                <input
-                                    class="form-control me-2"
-                                    type="search"
-                                    placeholder="Cerca film e serie"
-                                    aria-label="Search"
-                                    @keyup.enter="$emit('search', inputSearch)"
-                                    v-model="inputSearch"
-                                />
-                                <button
-                                    class="btn btn-outline-success"
-                                    type="submit"
-                                    @click="
-                                        $emit('search', inputSearch),
-                                            $emit('triggerOne'),
-                                            $emit('triggerTwo')
-                                    "
-                                >
-                                    CERCA
-                                </button>
-                            </form>
-                        </div>
                     </ul>
                 </div>
             </div>
@@ -315,5 +320,8 @@ export default {
 <style scoped lang="scss">
 header {
     padding-bottom: 10rem;
+    .navbar {
+        border-bottom: 1px solid white;
+    }
 }
 </style>
