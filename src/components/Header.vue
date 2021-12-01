@@ -2,11 +2,7 @@
     <div class="container">
         <div class="search-container">
             <input
-                @keyup.enter="
-                    $emit('search', inputSearch),
-                        $emit('triggerOne'),
-                        $emit('triggerTwo')
-                "
+                @keyup.enter="$emit('search', inputSearch)"
                 v-model="inputSearch"
                 type="text"
                 placeholder="Cerca film e serie TV"
