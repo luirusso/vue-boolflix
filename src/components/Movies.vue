@@ -89,10 +89,7 @@ export default {
     }
     &:hover .card-info {
         display: block;
-        background-color: red;
-    }
-    &:hover .noImagePlaceholder {
-        display: none;
+        background-color: rgba(0, 0, 0, 0.76);
     }
     .card-info {
         position: absolute;
@@ -101,6 +98,9 @@ export default {
         width: 100%;
         height: 100%;
         display: none;
+        background-color: transparent;
+        transition: background-color 0.3s linear;
+        padding: 5rem;
     }
 }
 

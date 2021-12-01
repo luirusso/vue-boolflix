@@ -50,8 +50,8 @@
                 >
                     <TvSeries
                         :poster_path="series.poster_path"
-                        :name="series.title"
-                        :original_name="series.original_title"
+                        :name="series.name"
+                        :original_name="series.original_name"
                         :vote_average="series.vote_average"
                         :original_language="series.original_language"
                     />

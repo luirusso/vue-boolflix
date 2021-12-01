@@ -41,7 +41,7 @@
                 :src="require(`../assets/${original_language}.png`)"
                 alt=""
             />
-        </div> -->
+            </div> -->
             <div>
                 Lingua originale:
                 <img
@@ -91,10 +91,7 @@ export default {
     }
     &:hover .card-info {
         display: block;
-        background-color: red;
-    }
-    &:hover .noImagePlaceholder {
-        display: none;
+        background-color: rgba(0, 0, 0, 0.76);       
     }
     .card-info {
         position: absolute;
@@ -103,6 +100,9 @@ export default {
         width: 100%;
         height: 100%;
         display: none;
+        padding: 5rem;
+        background-color: transparent;
+        transition: background-color 0.3s linear;
     }
 }
 
