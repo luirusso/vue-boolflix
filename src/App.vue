@@ -1,8 +1,6 @@
 <template>
     <div id="app">
-        <Header
-            @search="performSearch"
-        />
+        <Header @search="performSearch" />
 
         <Main :moviesArray="moviesList" :tvSeriesArray="tvSeriesList" />
     </div>

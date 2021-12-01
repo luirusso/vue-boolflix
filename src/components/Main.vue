@@ -2,13 +2,12 @@
     <div class="container">
         <ul>
             <li v-for="(movie, index) in moviesArray" :key="`movie-${index}`">
-
-                <Movies 
-                :poster_path="movie.poster_path"
-                :title="movie.title"
-                :original_title="movie.original_title"
-                :vote_average="movie.vote_average"
-                :original_language="movie.original_language"
+                <Movies
+                    :poster_path="movie.poster_path"
+                    :title="movie.title"
+                    :original_title="movie.original_title"
+                    :vote_average="movie.vote_average"
+                    :original_language="movie.original_language"
                 />
 
                 <!-- <div class="card-content">
@@ -42,13 +41,12 @@
                 v-for="(series, index) in tvSeriesArray"
                 :key="`series-${index}`"
             >
-
-                <TvSeries 
-                :poster_path="series.poster_path"
-                :name="series.title"
-                :original_name="series.original_title"
-                :vote_average="series.vote_average"
-                :original_language="series.original_language"
+                <TvSeries
+                    :poster_path="series.poster_path"
+                    :name="series.title"
+                    :original_name="series.original_title"
+                    :vote_average="series.vote_average"
+                    :original_language="series.original_language"
                 />
 
                 <!-- <div class="card-content">
@@ -81,11 +79,10 @@
 </template>
 
 <script>
-import Movies from '../components/Movies.vue';
-import TvSeries from '../components/TvSeries.vue';
+import Movies from "../components/Movies.vue";
+import TvSeries from "../components/TvSeries.vue";
 
 export default {
-
     name: "Main",
     components: {
         Movies,
