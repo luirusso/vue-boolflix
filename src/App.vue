@@ -27,44 +27,6 @@ export default {
         };
     },
     methods: {
-        getMovies() {
-            /**
-             * Get movies list from api
-             */
-            axios
-                .get("https://api.themoviedb.org/3/search/movie", {
-                    params: {
-                        api_key: "56dd66302a0e2a5c6c9bbd2082ac8c6d",
-                        query: this.inputSearch,
-                        language: "it-IT",
-                    },
-                })
-                .then((result) => {
-                    console.log(result.data);
-                    this.moviesList = result.data.results;
-                })
-                .catch((error) => console.log(error));
-        },
-
-        getTvSeries() {
-            /**
-             * Get tv series list from api
-             */
-            axios
-                .get("https://api.themoviedb.org/3/search/tv", {
-                    params: {
-                        api_key: "56dd66302a0e2a5c6c9bbd2082ac8c6d",
-                        query: this.inputSearch,
-                        language: "it-IT",
-                    },
-                })
-                .then((result) => {
-                    console.log(result.data);
-                    this.tvSeriesList = result.data.results;
-                })
-                .catch((error) => console.log(error));
-        },
-
         performSearch(text) {
             console.log(text);
             this.inputSearch = text;
