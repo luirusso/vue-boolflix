@@ -1,16 +1,22 @@
 <template>
-    <div class="container">
-        <ul class="justify-content-start">
-            <li v-for="(movie, index) in moviesArray" :key="`movie-${index}`">
-                <Movies
-                    :poster_path="movie.poster_path"
-                    :title="movie.title"
-                    :original_title="movie.original_title"
-                    :vote_average="movie.vote_average"
-                    :original_language="movie.original_language"
-                />
+    <main>
+        <div class="result-container">
+            <h2 class="text-white px-5">SERIE ORIGINALI NETFLIX</h2>
+            <ul>
+                <li
+                    class="m-2"
+                    v-for="(movie, index) in moviesArray"
+                    :key="`movie-${index}`"
+                >
+                    <Movies
+                        :poster_path="movie.poster_path"
+                        :title="movie.title"
+                        :original_title="movie.original_title"
+                        :vote_average="movie.vote_average"
+                        :original_language="movie.original_language"
+                    />
 
-                <!-- <div class="card-content">
+                    <!-- <div class="card-content">
                     <div>
                         <img
                             v-if="movie.poster_path !== null"
@@ -35,21 +41,22 @@
                     </div>
                     <div>Lingua originale: {{ movie.original_language }}</div>
                 </div> -->
-            </li>
+                </li>
 
-            <li
-                v-for="(series, index) in tvSeriesArray"
-                :key="`series-${index}`"
-            >
-                <TvSeries
-                    :poster_path="series.poster_path"
-                    :name="series.title"
-                    :original_name="series.original_title"
-                    :vote_average="series.vote_average"
-                    :original_language="series.original_language"
-                />
+                <li
+                    class="m-2"
+                    v-for="(series, index) in tvSeriesArray"
+                    :key="`series-${index}`"
+                >
+                    <TvSeries
+                        :poster_path="series.poster_path"
+                        :name="series.title"
+                        :original_name="series.original_title"
+                        :vote_average="series.vote_average"
+                        :original_language="series.original_language"
+                    />
 
-                <!-- <div class="card-content">
+                    <!-- <div class="card-content">
                     <div>
                         <img
                             v-if="series.poster_path !== null"
@@ -73,9 +80,10 @@
                     </div>
                     <div>Lingua originale: {{ series.original_language }}</div>
                 </div> -->
-            </li>
-        </ul>
-    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
 </template>
 
 <script>
@@ -112,7 +120,8 @@ ul {
     justify-content: center;
     flex-wrap: wrap;
     li {
-        // padding: 1rem 1.5rem;
+        height: 513px;
+        overflow: hidden;
     }
     .flag {
         max-width: 30px;

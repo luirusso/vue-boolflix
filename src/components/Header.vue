@@ -254,14 +254,6 @@
                     </ul>
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item px-2">
-                            <button
-                                type="button"
-                                class="btn btn-secondary round_site_btn grey_btn"
-                            >
-                                Accedi
-                            </button>
-                        </li>
-                        <li class="nav-item px-2">
                             <div class="container-fluid">
                                 <div class="d-flex">
                                     <input
@@ -275,7 +267,7 @@
                                         v-model="inputSearch"
                                     />
                                     <button
-                                        class="btn btn-outline-success"
+                                        class="btn btn-outline-light"
                                         type="submit"
                                         @click="
                                             $emit('search', inputSearch),
@@ -289,15 +281,23 @@
                             </div>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item ps-5">
                             <a
                                 class="nav-link"
                                 href="#"
                                 role="button"
                                 aria-expanded="false"
                             >
-                                Il mio Netflix
+                                <i class="fs-1 fas fa-user-circle"></i>
                             </a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <button
+                                type="button"
+                                class="btn btn-secondary"
+                            >
+                                Accedi
+                            </button>
                         </li>
                     </ul>
                 </div>
