@@ -105,17 +105,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// ul {
-//     list-style: none;
-//     display: flex;
-//     justify-content: center;
-//     flex-wrap: wrap;
-//     li {
-//         padding: 1rem 1.5rem;
-//         background-color: lightgray;
-//     }
-//     .flag {
-//         max-width: 30px;
-//     }
-// }
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+        padding: 1rem 1.5rem;
+        background-color: lightgray;
+    }
+    .flag {
+        max-width: 30px;
+    }
+}
 </style>
