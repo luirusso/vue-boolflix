@@ -263,7 +263,7 @@
                         </li>
                         <li class="nav-item px-2">
                             <div class="container-fluid">
-                                <form class="d-flex">
+                                <div class="d-flex">
                                     <input
                                         class="form-control me-2"
                                         type="search"
@@ -285,7 +285,7 @@
                                     >
                                         CERCA
                                     </button>
-                                </form>
+                                </div>
                             </div>
                         </li>
 

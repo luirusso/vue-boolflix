@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <ul>
+        <ul class="justify-content-start">
             <li v-for="(movie, index) in moviesArray" :key="`movie-${index}`">
                 <Movies
                     :poster_path="movie.poster_path"
@@ -106,13 +106,13 @@ export default {
 
 <style scoped lang="scss">
 ul {
+    color: white;
     list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     li {
-        padding: 1rem 1.5rem;
-        background-color: lightgray;
+        // padding: 1rem 1.5rem;
     }
     .flag {
         max-width: 30px;
