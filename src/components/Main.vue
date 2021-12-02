@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="result-container">
-            <h2 class="text-white px-5">SERIE ORIGINALI NETFLIX</h2>
+            <h2  class="text-white px-5">SERIE ORIGINALI NETFLIX</h2>
             <ul>
                 <li
                     class="m-2"
@@ -13,7 +13,7 @@
                         :title="movie.title"
                         :original_title="movie.original_title"
                         :vote_average="movie.vote_average"
-                        :original_language="movie.original_language"
+                        :overview="movie.overview"
                     />
 
                     <!-- <div class="card-content">
@@ -53,7 +53,7 @@
                         :name="series.name"
                         :original_name="series.original_name"
                         :vote_average="series.vote_average"
-                        :original_language="series.original_language"
+                        :overview="series.overview"
                     />
 
                     <!-- <div class="card-content">

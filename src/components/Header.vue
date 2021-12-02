@@ -24,7 +24,7 @@
             class="navbar fixed-top fixed-top-nav navbar-expand-lg navbar-dark bg-dark"
         >
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand pe-3" href="#">
                     <img src="../assets/logobool.png" alt="" />
                 </a>
                 <button
@@ -43,213 +43,60 @@
                     id="navbarSupportedContent"
                 >
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                id="navbarDropdown"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" role="button">
                                 Serie
                             </a>
-                            <ul
-                                class="dropdown-menu"
-                                aria-labelledby="navbarDropdown"
-                            >
-                                <li>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"
-                                        >Another action</a
-                                    >
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Something else here</a
-                                    >
-                                </li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
                             <a
-                                class="nav-link dropdown-toggle"
+                                class="nav-link"
                                 href="#"
-                                id="navbarDropdown"
                                 role="button"
-                                data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
                                 Film
                             </a>
-                            <ul
-                                class="dropdown-menu"
-                                aria-labelledby="navbarDropdown"
-                            >
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Action
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Another action
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Something else here
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
                             <a
-                                class="nav-link dropdown-toggle"
+                                class="nav-link"
                                 href="#"
-                                id="navbarDropdown"
                                 role="button"
-                                data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
                                 Servizi
                             </a>
-                            <ul
-                                class="dropdown-menu"
-                                aria-labelledby="navbarDropdown"
-                            >
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Action
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Another action
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Something else here
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
                             <a
-                                class="nav-link dropdown-toggle"
+                                class="nav-link"
                                 href="#"
-                                id="navbarDropdown"
                                 role="button"
-                                data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
                                 Novità
                             </a>
-                            <ul
-                                class="dropdown-menu"
-                                aria-labelledby="navbarDropdown"
-                            >
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Action
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Another action
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Something else here
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
                             <a
-                                class="nav-link dropdown-toggle"
+                                class="nav-link"
                                 href="#"
-                                id="navbarDropdown"
                                 role="button"
-                                data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
                                 Info Abbonamento
                             </a>
-                            <ul
-                                class="dropdown-menu"
-                                aria-labelledby="navbarDropdown"
-                            >
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Action
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Another action
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Something else here
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
                             <a
-                                class="nav-link dropdown-toggle"
+                                class="nav-link"
                                 href="#"
-                                id="navbarDropdown"
                                 role="button"
-                                data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
                                 Supporto
                             </a>
-                            <ul
-                                class="dropdown-menu"
-                                aria-labelledby="navbarDropdown"
-                            >
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Action
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Another action
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Something else here
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
                     </ul>
                     <ul class="navbar-nav align-items-center">
@@ -257,7 +104,7 @@
                             <div class="container-fluid">
                                 <div class="d-flex">
                                     <input
-                                        class="form-control me-2"
+                                        class="round form-control me-2"
                                         type="search"
                                         placeholder="Cerca film e serie"
                                         aria-label="Search"
@@ -267,7 +114,7 @@
                                         v-model="inputSearch"
                                     />
                                     <button
-                                        class="btn btn-outline-light"
+                                        class="btn btn-outline-light round"
                                         type="submit"
                                         @click="
                                             $emit('search', inputSearch),
@@ -275,13 +122,23 @@
                                                 $emit('triggerTwo')
                                         "
                                     >
-                                        CERCA
+                                        <i class="fas fa-search"></i>
                                     </button>
                                 </div>
                             </div>
                         </li>
+                        <li class="nav-item px-2">
+                            <a
+                                class="nav-link"
+                                href="#"
+                                role="button"
+                                aria-expanded="false"
+                            >
+                                <i class="fs-4 fas fa-bell"></i>
+                            </a>
+                        </li>
 
-                        <li class="nav-item ps-5">
+                        <li class="nav-item px-2">
                             <a
                                 class="nav-link"
                                 href="#"
@@ -291,11 +148,8 @@
                                 <i class="fs-1 fas fa-user-circle"></i>
                             </a>
                         </li>
-                        <li class="nav-item px-2">
-                            <button
-                                type="button"
-                                class="btn btn-secondary"
-                            >
+                        <li class="nav-item mx-2">
+                            <button type="button" class="btn btn-secondary">
                                 Accedi
                             </button>
                         </li>
@@ -321,7 +175,12 @@ export default {
 header {
     padding-bottom: 10rem;
     .navbar {
-        border-bottom: 1px solid white;
+        background-color: #000000;
+    }
+    .navbar-brand {
+        img {
+            max-width: 150px;
+        }
     }
 }
 </style>

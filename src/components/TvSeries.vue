@@ -17,10 +17,10 @@
         </div>
 
         <div class="card-info">
-            <div>Titolo: {{ name }}</div>
-            <div>Titolo originale: {{ original_name }}</div>
+            <div><strong>Titolo:</strong> {{ name }}</div>
+            <div><strong>Titolo originale:</strong> {{ original_name }}</div>
             <div>
-                Voto:
+                <strong>Voto: </strong>
                 <span
                     v-for="(element, i) in Math.ceil(vote_average / 2)"
                     :key="`rating${i}`"
@@ -34,22 +34,8 @@
                     <i class="fas fa-star"></i>
                 </span>
             </div>
-            <!-- <div>
-            <img
-                class="flag"
-                v-if="movieImageSelector(original_language)"
-                :src="require(`../assets/${original_language}.png`)"
-                alt=""
-            />
-            </div> -->
-            <div>
-                Lingua originale:
-                <img
-                    class="flag"
-                    v-if="movieImageSelector(original_language)"
-                    :src="require(`../assets/${original_language}.png`)"
-                    alt=""
-                />
+            <div v-if="overview !== ''">
+                <strong>Overview:</strong> {{ overview }}
             </div>
         </div>
     </div>
@@ -64,15 +50,7 @@ export default {
         original_name: String,
         vote_average: Number,
         original_language: String,
-    },
-
-    methods: {
-        movieImageSelector(apiLanguage) {
-            const languages = ["it", "en"];
-
-            //operatore ternario
-            return languages.includes(apiLanguage) ? true : false;
-        },
+        overview: String,
     },
 };
 </script>
@@ -80,7 +58,10 @@ export default {
 <style scoped lang="scss">
 .card-content {
     position: relative;
-    // width: 400px;
+    overflow-y: auto;
+    div {
+        padding-bottom: 8px;
+    }
     .card-image {
         img {
             object-fit: cover;
@@ -91,7 +72,7 @@ export default {
     }
     &:hover .card-info {
         display: block;
-        background-color: rgba(0, 0, 0, 0.76);       
+        background-color: rgba(0, 0, 0, 0.877);
     }
     .card-info {
         position: absolute;
@@ -100,7 +81,7 @@ export default {
         width: 100%;
         height: 100%;
         display: none;
-        padding: 5rem;
+        padding: 2rem;
         background-color: transparent;
         transition: background-color 0.3s linear;
     }
