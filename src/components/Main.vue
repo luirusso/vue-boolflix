@@ -94,6 +94,7 @@ h2 {
     padding-left: 5rem;
 }
 ul {
+    padding: 0;
     color: white;
     list-style: none;
     display: flex;
