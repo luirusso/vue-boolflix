@@ -84,7 +84,7 @@
                             <div class="container-fluid">
                                 <div class="d-flex">
                                     <input
-                                        class="round search form-control me-2"
+                                        class="search form-control me-2"
                                         type="search"
                                         placeholder="Cerca film e serie"
                                         aria-label="Search"
@@ -94,7 +94,7 @@
                                         v-model="inputSearch"
                                     />
                                     <button
-                                        class="btn btn-outline-light round"
+                                        class="button btn btn-outline-light round"
                                         type="submit"
                                         @click="
                                             $emit('search', inputSearch),
@@ -155,7 +155,7 @@ export default {
 header {
     padding-bottom: 10rem;
     .navbar {
-        background-color: #000000;
+        border-bottom: 0.5px solid #d3d3d317;
     }
     .navbar-brand {
         img {
@@ -164,7 +164,18 @@ header {
     }
 .search {
     background: transparent;
-    color: white;
+    color: rgba(255, 255, 255, 0.479);
+    border: none;
+    border-radius: 30px;
+    border-bottom: 1px solid;
+    transition: border 0.3s linear;
+    &:focus {
+        border-bottom: none;
     }
+    }
+.button {
+    border: none;
+    color: #9B9D9E;
+}
 }
 </style>

@@ -58,6 +58,7 @@ export default {
 <style scoped lang="scss">
 .card-content {
     position: relative;
+    height: 100%;
     div {
         padding-bottom: 8px;
     }
@@ -84,7 +85,7 @@ export default {
         display: none;
         padding: 2rem;
         background-color: transparent;
-        transition: background 0.4s;
+        transition: background 0.4s ease-in-out;
         overflow-y: auto;
         &:hover {
             background-color: rgba(0, 0, 0, 0.521);
