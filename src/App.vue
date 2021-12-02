@@ -33,6 +33,9 @@ export default {
         this.getPopularMovies();
     },
     methods: {
+        /**
+         * Get current popular movies
+         */
         getPopularMovies() {
             axios
                 .get("https://api.themoviedb.org/3/movie/popular", {

@@ -1,5 +1,7 @@
 <template>
     <main>
+
+        <!-- POPULAR SECTION LANDING PAGE, LOADED AT START -->
         <div class="result-container">
             <div v-if="noResults" class="popularList">
                 <h2 class="text-white">I PIÙ POPOLARI</h2>
@@ -20,6 +22,7 @@
                 </ul>
             </div>
 
+            <!-- MOVIES LIST -->
             <h2 v-if="moviesArray.length !== 0" class="text-white">
                 FILM BOOLFLIX
             </h2>
@@ -39,6 +42,7 @@
                 </li>
             </ul>
 
+            <!-- SERIES LIST -->
             <h2 v-if="tvSeriesArray.length !== 0" class="text-white pt-5">
                 SERIE ORIGINALI BOOLFLIX
             </h2>
