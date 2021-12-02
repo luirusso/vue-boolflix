@@ -84,7 +84,7 @@
                             <div class="container-fluid">
                                 <div class="d-flex">
                                     <input
-                                        class="round form-control me-2"
+                                        class="round search form-control me-2"
                                         type="search"
                                         placeholder="Cerca film e serie"
                                         aria-label="Search"
@@ -161,6 +161,10 @@ header {
         img {
             max-width: 150px;
         }
+    }
+.search {
+    background: transparent;
+    color: white;
     }
 }
 </style>

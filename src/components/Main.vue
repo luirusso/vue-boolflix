@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="result-container">
-            <h2  class="text-white">FILM E SERIE ORIGINALI BOOLFLIX</h2>
+            <h2 v-if="moviesArray.length !== 0" class="text-white">FILM BOOLFLIX</h2>
             <ul>
                 <li
                     class="m-2"
@@ -16,7 +16,9 @@
                         :overview="movie.overview"
                     />
                 </li>
-
+            </ul>
+            <h2 v-if="tvSeriesArray.length !== 0" class="text-white pt-5">SERIE ORIGINALI BOOLFLIX</h2>
+            <ul>
                 <li
                     class="m-2"
                     v-for="(series, index) in tvSeriesArray"
@@ -50,14 +52,6 @@ export default {
         moviesArray: Array,
         tvSeriesArray: Array,
     },
-    // methods: {
-    //     movieImageSelector(apiLanguage) {
-    //         const languages = ["it", "en"];
-
-    //         //operatore ternario
-    //         return languages.includes(apiLanguage) ? true : false;
-    //     },
-    // },
 };
 </script>
 

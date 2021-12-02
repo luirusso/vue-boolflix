@@ -25,13 +25,13 @@
                     v-for="(element, i) in Math.ceil(vote_average / 2)"
                     :key="`rating${i}`"
                 >
-                    <i class="fas fa-star"></i>
+                    <i class="text-warning fas fa-star"></i>
                 </span>
                 <span
                     v-for="(element, i) in 5 - Math.ceil(vote_average / 2)"
                     :key="`emptyRating${i}`"
                 >
-                    <i class="far fa-star"></i>
+                    <i class="text-warning far fa-star"></i>
                 </span>
             </div>
             <div v-if="overview !== ''">
@@ -58,7 +58,6 @@ export default {
 <style scoped lang="scss">
 .card-content {
     position: relative;
-    overflow-y: auto;
     div {
         padding-bottom: 8px;
     }
@@ -72,6 +71,9 @@ export default {
         display: block;
         background-color: rgba(0, 0, 0, 0.877);
     }
+    &:hover .card-image {
+        filter: blur(4px);
+    }
     .card-info {
         position: absolute;
         top: 0;
@@ -82,6 +84,7 @@ export default {
         background-color: transparent;
         transition: background-color 0.3s linear;
         padding: 2rem;
+        overflow-y: auto;
     }
 }
 

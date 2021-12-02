@@ -25,13 +25,13 @@
                     v-for="(element, i) in Math.ceil(vote_average / 2)"
                     :key="`rating${i}`"
                 >
-                    <i class="fas fa-star"></i>
+                    <i class="text-warning fas fa-star"></i>
                 </span>
                 <span
                     v-for="(element, i) in 5 - Math.ceil(vote_average / 2)"
                     :key="`emptyRating${i}`"
                 >
-                    <i class="fas fa-star"></i>
+                    <i class="text-warning fas fa-star"></i>
                 </span>
             </div>
             <div v-if="overview !== ''">
