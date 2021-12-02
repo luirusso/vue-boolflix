@@ -59,13 +59,9 @@ export default {
 .card-content {
     position: relative;
     height: 100%;
-    div {
-        padding-bottom: 8px;
-    }
-    .card-image {
-        img {
-            object-fit: cover;
-        }
+
+    img {
+        object-fit: cover;
     }
     &:hover {
         cursor: pointer;
@@ -76,6 +72,7 @@ export default {
     &:hover .card-image {
         filter: blur(4px);
     }
+
     .card-info {
         position: absolute;
         top: 0;
@@ -83,14 +80,22 @@ export default {
         width: 100%;
         height: 100%;
         display: none;
-        padding: 2rem;
         background-color: transparent;
-        transition: background 0.4s ease-in-out;
+        padding: 2rem;
         overflow-y: auto;
+        transition: background 0.4s ease-in-out;
+        div {
+            padding-bottom: 8px;
+        }
         &:hover {
             background-color: rgba(0, 0, 0, 0.521);
         }
     }
+}
+
+.card-image,
+.card-image img {
+    height: 100%;
 }
 
 .noImagePlaceholder {

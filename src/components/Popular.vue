@@ -43,7 +43,7 @@
 
 <script>
 export default {
-    name: "Movies",
+    name: "Popular",
     props: {
         poster_path: String,
         title: String,

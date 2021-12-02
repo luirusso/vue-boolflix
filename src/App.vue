@@ -2,7 +2,11 @@
     <div id="app">
         <Header @search="performSearch" />
 
-        <Main :moviesArray="moviesList" :tvSeriesArray="tvSeriesList" />
+        <Main
+            :moviesArray="moviesList"
+            :tvSeriesArray="tvSeriesList"
+            :popularMoviesArray="popularMoviesList"
+        />
     </div>
 </template>
 
@@ -10,7 +14,6 @@
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import axios from "axios";
-
 
 export default {
     name: "App",
@@ -23,9 +26,27 @@ export default {
             inputSearch: "",
             moviesList: [],
             tvSeriesList: [],
+            popularMoviesList: [],
         };
     },
+    created() {
+        this.getPopularMovies();
+    },
     methods: {
+        getPopularMovies() {
+            axios
+                .get("https://api.themoviedb.org/3/movie/popular", {
+                    params: {
+                        api_key: "56dd66302a0e2a5c6c9bbd2082ac8c6d",
+                        page: 1,
+                        language: "it-IT",
+                    },
+                })
+
+                .then((result) => {
+                    this.popularMoviesList = result.data.results;
+                });
+        },
         performSearch(text) {
             console.log(text);
             this.inputSearch = text;

@@ -1,7 +1,7 @@
 <template>
     <header>
         <nav
-            class="navbar fixed-top fixed-top-nav navbar-expand-lg navbar-dark bg-dark"
+            class="navbar fixed-top fixed-top-nav navbar-expand-lg navbar-dark"
         >
             <div class="container-fluid">
                 <a class="navbar-brand pe-3" href="#">
@@ -30,7 +30,7 @@
                         </li>
                         <li class="nav-item">
                             <a
-                                class="nav-link"
+                                class="nav-link active"
                                 href="#"
                                 role="button"
                                 aria-expanded="false"
@@ -94,7 +94,7 @@
                                         v-model="inputSearch"
                                     />
                                     <button
-                                        class="button btn btn-outline-light round"
+                                        class="button btn btn-outline-light"
                                         type="submit"
                                         @click="
                                             $emit('search', inputSearch),
@@ -155,27 +155,33 @@ export default {
 header {
     padding-bottom: 10rem;
     .navbar {
-        border-bottom: 0.5px solid #d3d3d317;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(
+            180deg,
+            rgb(0 0 0) 0%,
+            rgb(0 0 0 / 60%) 100%
+        );
     }
     .navbar-brand {
         img {
             max-width: 150px;
         }
     }
-.search {
-    background: transparent;
-    color: rgba(255, 255, 255, 0.479);
-    border: none;
-    border-radius: 30px;
-    border-bottom: 1px solid;
-    transition: border 0.3s linear;
-    &:focus {
-        border-bottom: none;
+    .search {
+        background: transparent;
+        color: rgba(255, 255, 255, 0.479);
+        border: none;
+        border-radius: 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+        transition: border 0.3s linear;
+        &:focus {
+            border-bottom: 1px solid white;
+        }
     }
+    .button {
+        border: none;
+        border-radius: 50%;
+        color: #9b9d9e;
     }
-.button {
-    border: none;
-    color: #9B9D9E;
-}
 }
 </style>
