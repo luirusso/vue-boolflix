@@ -1,24 +1,4 @@
 <template>
-    <!-- <div class="container">
-        <div class="search-container">
-            <input
-                @keyup.enter="$emit('search', inputSearch)"
-                v-model="inputSearch"
-                type="text"
-                placeholder="Cerca film e serie TV"
-            />
-            <button
-                @click="
-                    $emit('search', inputSearch),
-                        $emit('triggerOne'),
-                        $emit('triggerTwo')
-                "
-            >
-                CERCA
-            </button>
-        </div>
-    </div> -->
-
     <header>
         <nav
             class="navbar fixed-top fixed-top-nav navbar-expand-lg navbar-dark bg-dark"

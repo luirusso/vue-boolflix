@@ -1,7 +1,7 @@
 <template>
     <main>
         <div class="result-container">
-            <h2  class="text-white px-5">SERIE ORIGINALI NETFLIX</h2>
+            <h2  class="text-white">FILM E SERIE ORIGINALI BOOLFLIX</h2>
             <ul>
                 <li
                     class="m-2"
@@ -15,32 +15,6 @@
                         :vote_average="movie.vote_average"
                         :overview="movie.overview"
                     />
-
-                    <!-- <div class="card-content">
-                    <div>
-                        <img
-                            v-if="movie.poster_path !== null"
-                            :src="`https://image.tmdb.org/t/p/w342${movie.poster_path}`"
-                            alt=""
-                        />
-                        <img v-else src="../assets/imageError.png" alt="" />
-                    </div>
-
-                    <div>Titolo: {{ movie.title }}</div>
-                    <div>Titolo originale: {{ movie.original_title }}</div>
-                    <div>Voto: {{ movie.vote_average }}</div>
-                    <div>
-                        <img
-                            class="flag"
-                            v-if="movieImageSelector(movie.original_language)"
-                            :src="
-                                require(`../assets/${movie.original_language}.png`)
-                            "
-                            alt=""
-                        />
-                    </div>
-                    <div>Lingua originale: {{ movie.original_language }}</div>
-                </div> -->
                 </li>
 
                 <li
@@ -55,31 +29,6 @@
                         :vote_average="series.vote_average"
                         :overview="series.overview"
                     />
-
-                    <!-- <div class="card-content">
-                    <div>
-                        <img
-                            v-if="series.poster_path !== null"
-                            :src="`https://image.tmdb.org/t/p/w342${series.poster_path}`"
-                            alt=""
-                        />
-                        <img v-else src="../assets/imageError.png" alt="" />
-                    </div>
-                    <div>Titolo: {{ series.name }}</div>
-                    <div>Titolo originale: {{ series.original_name }}</div>
-                    <div>Voto: {{ series.vote_average }}</div>
-                    <div>
-                        <img
-                            class="flag"
-                            v-if="movieImageSelector(series.original_language)"
-                            :src="
-                                require(`../assets/${series.original_language}.png`)
-                            "
-                            alt=""
-                        />
-                    </div>
-                    <div>Lingua originale: {{ series.original_language }}</div>
-                </div> -->
                 </li>
             </ul>
         </div>
@@ -113,6 +62,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+h2 {
+    padding-left: 5rem;
+}
 ul {
     color: white;
     list-style: none;
