@@ -102,7 +102,6 @@ export default {
     width: 342px;
     height: 513px;
     background-color: black;
-    border: 0.5px solid white;
 }
 
 .flag {
