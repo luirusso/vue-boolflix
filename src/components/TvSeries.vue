@@ -58,7 +58,6 @@ export default {
 <style scoped lang="scss">
 .card-content {
     position: relative;
-    overflow-y: auto;
     div {
         padding-bottom: 8px;
     }
@@ -72,7 +71,9 @@ export default {
     }
     &:hover .card-info {
         display: block;
-        background-color: rgba(0, 0, 0, 0.877);
+    }
+    &:hover .card-image {
+        filter: blur(4px);
     }
     .card-info {
         position: absolute;
@@ -83,7 +84,11 @@ export default {
         display: none;
         padding: 2rem;
         background-color: transparent;
-        transition: background-color 0.3s linear;
+        transition: background 0.4s;
+        overflow-y: auto;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.521);
+        }
     }
 }
 

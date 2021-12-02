@@ -69,11 +69,11 @@ export default {
     }
     &:hover .card-info {
         display: block;
-        background-color: rgba(0, 0, 0, 0.877);
     }
     &:hover .card-image {
         filter: blur(4px);
     }
+
     .card-info {
         position: absolute;
         top: 0;
@@ -82,9 +82,12 @@ export default {
         height: 100%;
         display: none;
         background-color: transparent;
-        transition: background-color 0.3s linear;
         padding: 2rem;
         overflow-y: auto;
+        transition: background 0.4s;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.521);
+        }
     }
 }
 
