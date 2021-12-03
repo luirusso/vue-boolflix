@@ -34,7 +34,10 @@
                     <i class="text-warning far fa-star"></i>
                 </span>
             </div>
-            <div v-if="overview !== ''">
+            <div v-if="overview == ''">
+                <strong>Overview:</strong> Non disponibile :(
+            </div>
+            <div v-else>
                 <strong>Overview:</strong> {{ overview }}
             </div>
         </div>
@@ -43,7 +46,7 @@
 
 <script>
 export default {
-    name: "Movies",
+    name: "Results",
     props: {
         poster_path: String,
         title: String,
@@ -88,7 +91,7 @@ export default {
             padding-bottom: 8px;
         }
         &:hover {
-            background-color: rgba(0, 0, 0, 0.521);
+            background-color: rgba(0, 0, 0, 0.692);
         }
     }
 }

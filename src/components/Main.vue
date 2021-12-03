@@ -11,7 +11,7 @@
                         v-for="(popular, index) in popularMoviesArray"
                         :key="`popularMovie-${index}`"
                     >
-                        <Popular
+                        <Results
                             :poster_path="popular.poster_path"
                             :title="popular.title"
                             :original_title="popular.original_title"
@@ -32,7 +32,7 @@
                     v-for="(movie, index) in moviesArray"
                     :key="`movie-${index}`"
                 >
-                    <Movies
+                    <Results
                         :poster_path="movie.poster_path"
                         :title="movie.title"
                         :original_title="movie.original_title"
@@ -52,10 +52,10 @@
                     v-for="(series, index) in tvSeriesArray"
                     :key="`series-${index}`"
                 >
-                    <TvSeries
+                    <Results
                         :poster_path="series.poster_path"
-                        :name="series.name"
-                        :original_name="series.original_name"
+                        :title="series.name"
+                        :original_title="series.original_name"
                         :vote_average="series.vote_average"
                         :overview="series.overview"
                     />
@@ -66,16 +66,12 @@
 </template>
 
 <script>
-import Movies from "../components/Movies.vue";
-import TvSeries from "../components/TvSeries.vue";
-import Popular from "../components/Popular.vue";
+import Results from "./Results.vue";
 
 export default {
     name: "Main",
     components: {
-        Movies,
-        TvSeries,
-        Popular,
+        Results,
     },
 
     props: {
