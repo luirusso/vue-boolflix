@@ -1,6 +1,5 @@
 <template>
     <main>
-
         <!-- POPULAR SECTION LANDING PAGE, LOADED AT START -->
         <div class="result-container">
             <div v-if="noResults" class="popularList">
@@ -105,10 +104,15 @@ ul {
         height: 513px;
         overflow: hidden;
         border-radius: 30px;
-        -webkit-box-shadow: 5px 5px 10px 0px #ffffff12;
-        -moz-box-shadow: 5px 5px 10px 0px #ffffff12;
-        -o-box-shadow: 5px 5px 10px 0px #ffffff12;
-        box-shadow: 5px 5px 10px 0px #ffffff12;
+        transition: transform 0.4s ease-in-out;
+        &:hover {
+            transform: scale(1.2);
+            -webkit-box-shadow: 5px 5px 10px 0px #00000012;
+            -moz-box-shadow: 5px 5px 10px 0px #00000012;
+            -o-box-shadow: 5px 5px 10px 0px #00000012;
+            box-shadow: 5px 5px 10px 0px #00000012;
+            z-index: 1;
+        }
     }
     .flag {
         max-width: 30px;
