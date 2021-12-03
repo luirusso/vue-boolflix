@@ -70,7 +70,7 @@ export default {
         cursor: pointer;
     }
     &:hover .card-info {
-        display: block;
+        opacity: 1;
     }
     &:hover .card-image {
         filter: blur(4px);
@@ -82,11 +82,11 @@ export default {
         left: 0;
         width: 100%;
         height: 100%;
-        display: none;
+        opacity: 0;
         background-color: transparent;
         padding: 2rem;
         overflow-y: auto;
-        transition: background 0.4s ease-in-out;
+        transition: background 0.4s, opacity 0.5s ease-in-out;
         div {
             padding-bottom: 8px;
         }

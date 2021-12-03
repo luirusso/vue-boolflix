@@ -6,7 +6,7 @@
                 <h2 class="text-white">I PIÙ POPOLARI</h2>
                 <ul>
                     <li
-                        class="m-2"
+                        class="m-3"
                         v-for="(popular, index) in popularMoviesArray"
                         :key="`popularMovie-${index}`"
                     >
@@ -27,7 +27,7 @@
             </h2>
             <ul>
                 <li
-                    class="m-2"
+                    class="m-3"
                     v-for="(movie, index) in moviesArray"
                     :key="`movie-${index}`"
                 >
@@ -47,7 +47,7 @@
             </h2>
             <ul>
                 <li
-                    class="m-2"
+                    class="m-3"
                     v-for="(series, index) in tvSeriesArray"
                     :key="`series-${index}`"
                 >
