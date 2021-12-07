@@ -18,7 +18,7 @@
 
         <div class="card-info">
             <div><strong>Titolo:</strong> {{ title }}</div>
-            <div><strong>Titolo originale:</strong> {{ original_title }}</div>
+            <div v-if="original_title !== title"><strong>Titolo originale:</strong> {{ original_title }}</div>
             <div>
                 <strong>Voto: </strong>
                 <span
