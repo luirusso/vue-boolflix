@@ -14,60 +14,54 @@
                         <i class="fas fa-globe"></i> Country / Region: Italy
                     </div>
                 </div>
-                <div class="text-center col-12 col-md-4 col-lg-2">
+                <div class="col-12 col-md-4 col-lg-2">
                     <h5 class="pb-3">CHI SIAMO</h5>
                     <ul>
                         <li>
-                            <a href="#"> Link footer n </a>
+                            <a href="#"> Domande frequenti </a>
                         </li>
                         <li>
-                            <a href="#"> Link footer n </a>
+                            <a href="#"> Condizioni di utilizzo </a>
                         </li>
                         <li>
-                            <a href="#"> Link footer n </a>
+                            <a href="#"> Privacy </a>
                         </li>
                         <li>
-                            <a href="#"> Link footer n </a>
-                        </li>
-                        <li>
-                            <a href="#"> Link footer n </a>
+                            <a href="#"> Come guardare Netflix </a>
                         </li>
                     </ul>
                 </div>
-                <div class="text-center col-12 col-md-4 col-lg-2">
+                <div class="col-12 col-md-4 col-lg-2">
                     <h5 class="pb-3">CONTATTACI</h5>
                     <ul>
                         <li>
-                            <a href="#"> Link footer n </a>
+                            <a href="#"> Domande frequenti </a>
                         </li>
                         <li>
-                            <a href="#"> Link footer n </a>
+                            <a href="#"> Rapporti con gli investitori </a>
                         </li>
                         <li>
-                            <a href="#"> Link footer n </a>
+                            <a href="#"> Informazioni sull'azienda </a>
                         </li>
                         <li>
-                            <a href="#"> Link footer n </a>
+                            <a href="#"> Centro assistenza </a>
                         </li>
                         <li>
-                            <a href="#"> Link footer n </a>
+                            <a href="#"> Opportunità di lavoro </a>
                         </li>
                         <li>
-                            <a href="#"> Link footer n </a>
-                        </li>
-                        <li>
-                            <a href="#"> Link footer n </a>
+                            <a href="#"> Note legali </a>
                         </li>
                     </ul>
                 </div>
-                <div class="text-center col-12 col-md-4 col-lg-2">
+                <div class="col-12 col-md-4 col-lg-2">
                     <h5 class="pb-3">SOCIAL</h5>
-                    <ul>
+                    <ul class="d-flex">
                         <li>
                             <a href="#"> <i class="mb-3 fs-3 fab fa-facebook"></i> </a>
                         </li>
                         <li>
-                            <a href="#"> <i class="mb-3 fs-3 fab fa-instagram"></i> </a>
+                            <a href="#"> <i class="px-3 mb-3 fs-3 fab fa-instagram"></i> </a>
                         </li>
                         <li>
                             <a href="#"> <i class="mb-3 fs-3 fab fa-twitter"></i> </a>
