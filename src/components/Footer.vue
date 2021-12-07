@@ -14,7 +14,7 @@
                         <i class="fas fa-globe"></i> Country / Region: Italy
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-2">
+                <div class="text-center text-md-start col-12 col-md-4 col-lg-2">
                     <h5 class="pb-3">CHI SIAMO</h5>
                     <ul>
                         <li>
@@ -31,7 +31,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-4 col-lg-2">
+                <div class="text-center text-md-start col-12 col-md-4 col-lg-2">
                     <h5 class="pb-3">CONTATTACI</h5>
                     <ul>
                         <li>
@@ -54,9 +54,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-4 col-lg-2">
+                <div class="text-center text-md-start col-12 col-md-4 col-lg-2">
                     <h5 class="pb-3">SOCIAL</h5>
-                    <ul class="d-flex">
+                    <ul class="d-flex justify-content-center justify-content-md-start">
                         <li>
                             <a href="#"> <i class="mb-3 fs-3 fab fa-facebook"></i> </a>
                         </li>
